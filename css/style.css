@@ -1,0 +1,10 @@
+body{
+    
+    background: url(../img/planodefundo.jpg);
+    background-repeat: no-repeat;
+}
+main {
+    text-align: center;
+    align-items: center;
+    border: 3px solid rgb(188, 194, 188);
+  }
