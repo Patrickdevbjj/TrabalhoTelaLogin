@@ -3,7 +3,7 @@ body{
     width: 100vw;
     background: url(../img/pexels-eberhard-grossgasteiger-691668.jpg) center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     align-items: center;
     
 }
@@ -11,6 +11,13 @@ main {
     text-align: center;
     align-items: center;
     border: 3px solid rgb(188, 194, 188);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
   }
 .redirecionamento {
     width: 200px;
