@@ -1,24 +1,88 @@
-body{
-    height: 100vh;
-    width: 100vw;
-    background: url(../img/pexels-eberhard-grossgasteiger-691668.jpg) center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif ;
 }
-main {
+
+body {
+    display: flex;
     text-align: center;
     align-items: center;
-    border: 3px solid rgb(188, 194, 188);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
+    background: #172031;
   }
-.redirecionamento {
-    width: 200px;
-}  
+  .login {
+
+    background: rgba(127, 127, 127, 1);
+    border-radius: 10px;
+    width: 500px;
+    padding: 60px;
+  }
+.login h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+.login .box-user {
+    position: relative;
+}
+.login .box-user input {
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color:#fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.login .box-user label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+} 
+.login .box-user input:focus~label,
+.login .box-user input:valid~label {
+    top: -20px;
+    left: 0;
+    color: aquamarine;
+    font-size: 14px;
+}
+.forget {
+    font-size: 12px;
+    color: blue;
+    float: right;
+}
+.btn{
+    
+    position: relative;
+    display: inline-block;
+    padding: 12px 20px;
+    color: blue;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-top: -11px;
+    transition: .5s ;
+}
+.btn:hover {
+    background: #03e9f4;
+    border-radius: 5px;
+    color:#172031;
+}
+@media(max-width: 405px){
+    .login{
+        width: 90%;
+    }
+}
